@@ -64,7 +64,7 @@ class Surface(ttk.Frame):
 			if wide <= 0 : wide = 1
 			high = int(high * factor)
 			if high <= 0 : high = 1
-			im=im.resize((wide, high), Image.ANTIALIAS)
+			im=im.resize((wide, high), Image.LANCZOS)
 			imgtk = ImageTk.PhotoImage(image=im)
 		return imgtk
 	
